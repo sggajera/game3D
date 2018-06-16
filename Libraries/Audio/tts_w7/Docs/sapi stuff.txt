@@ -1,0 +1,112 @@
+> Hi Daniel,
+>
+> So there shouldn't be any problems implementing ISpAudio as you described.
+> Here a few points:
+>     - You may want to just implement ISpStreamFormat as this may be simpler.
+>     - The threading model on your new object needs to be set to "Both" (For
+> TTS it won't actually be called on multiple threads, but you still need the
+> setting).
+>     - There are some problems when an application calls ISpVoice::Pause()
+> when using a custom audio object so do not use this method.
+>
+> Note there may be an easier way to do all this by using the SpStream helper
+> class. This class already implements ISpStreamFormat, and allows the output
+> to be set to either a wave file or an IStream. This (oft-repeated) sample
+> uses CreateStreamOnHGlobal to make an IStream using Win32 global memory and
+> then passes that to the TTS engine:
+>
+>     CComPtr<ISpStream> cpStream;
+>     CComPtr<IStream> cpBaseStream;
+>     GUID guidFormat; WAVEFORMATEX* pWavFormatEx;
+>     HRESULT hr = cpStream.CoCreateInstance(CLSID_SpStream);
+>     if(SUCCEEDED(hr))
+>     {
+>         hr = CreateStreamOnHGlobal(NULL, FALSE, &cpBaseStream);
+>     }
+>     if(SUCCEEDED(hr))
+>     {
+>         hr = SpConvertStreamFormatEnum(SPSF_22kHz16BitMono, &guidFormat,
+> &pWavFormatEx);
+>     }
+>     if(SUCCEEDED(hr))
+>     {
+>         hr = cpStream->SetBaseStream(cpBaseStream, guidFormat,
+> pWavFormatEx);
+>         cpBaseStream.Release();
+>     }
+>     if(SUCCEEDED(hr))
+>     {
+>         hr = cpVoice->SetOutput(cpStream, TRUE);
+>     }
+>
+> Then when you want to access the memory use the GetHGlobalFromStream and
+> then GlobalLock Win32 methods.
+>
+> You certainly don't have to do it this way but it might be simpler.
+>
+>
+> Hope this helps,
+>
+
+
+_____________________________________________________________________________________
+
+
+
+Do a 'seek' to the begining of the stream before you read from it:
+
+ // set the stream pointer to begining
+ LARGE_INTEGER liTmp;
+liTmp.QuadPart = 0;
+pStreamIN->Seek(liTmp, SEEK_SET, NULL);
+
+Sajit Prabhakaran
+======================
+ http://www.voxworx.com/
+ ...where web talks...
+======================
+
+"Matthew Caryl" <matthew@digital-animations.com> wrote in message
+news:3b4db3cd$0$8509$ed9e5944@reading.news.pipex.net...
+> > I'm after some advice on the SAPI 5.0 TTS Engine.
+> > I need to stream the audio from a TTS engine into a memory buffer (I'm now
+> > able to do this to a file). I have a rough idea that IStream interface is to
+> > be used. I would apprecaite any help with the steps involved (I'm looking to
+> > reduce the learning/research curve).
+>
+> Same problem here.  Haven't found any sample code.  Documentation always
+> assumes you want to play it immediately or save it to a file.  I *may* have
+> got the data into an IStream but now I can't seem to get it out.  The read
+> operation returns zero bytes :(
+>
+> CComPtr<IStream> cpStream;
+> CComPtr<ISpStream> cpWavStream;
+> WAVEFORMATEX* pWaveFormatEx = NULL;
+> GUID guidWave = SPDFID_WaveFormatEx;
+> SPSTREAMFORMAT   FmtId;
+> STATSTG Stats;
+> ULONG Size;
+> DAArray<char, char> PcmData;
+>
+> HRESULT Result = cpVoice.CoCreateInstance(CLSID_SpVoice);
+> Result = cpWavStream.CoCreateInstance(CLSID_SpStream);
+> Result = CreateStreamOnHGlobal(NULL, true, &cpStream);
+>
+> FmtId = (SPSTREAMFORMAT) (SPSF_22kHz16BitMono);
+> Result = SpConvertStreamFormatEnum(FmtId, &guidWave, &pWaveFormatEx);
+> Result = cpWavStream->SetBaseStream(cpStream, guidWave, pWaveFormatEx);
+> Result = cpVoice->SetOutput(cpWavStream, TRUE);
+> Result = cpVoice->Speak(L" Hello, world ", 0, NULL);
+> Result = cpVoice->WaitUntilDone( INFINITE );
+> Result = cpStream->Stat(&Stats, STATFLAG_DEFAULT);
+> PcmData.SetSize((int)(Stats.cbSize.QuadPart));
+> Result = cpStream->Read(PcmData.GetData(), (int)(Stats.cbSize.QuadPart),
+> &Size);
+>
+>
+>
+
+
+--------------------------------------------------------------------------------
+Google Home - - Business Solutions - About Google 
+

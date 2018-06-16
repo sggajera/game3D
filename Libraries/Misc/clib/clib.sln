@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clib", "clib.vcxproj", "{2AC8595F-13C4-4A40-899E-0CC0067EC054}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AC8595F-13C4-4A40-899E-0CC0067EC054}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2AC8595F-13C4-4A40-899E-0CC0067EC054}.Debug|Win32.Build.0 = Debug|Win32
+		{2AC8595F-13C4-4A40-899E-0CC0067EC054}.Release|Win32.ActiveCfg = Release|Win32
+		{2AC8595F-13C4-4A40-899E-0CC0067EC054}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

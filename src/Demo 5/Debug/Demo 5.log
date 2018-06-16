@@ -1,0 +1,77 @@
+﻿  win_support.cpp
+  Splash.cpp
+  listbox.cpp
+  getdxver.cpp
+  CMainFrame.cpp
+  CMainApp.cpp
+  position.cpp
+c:\dev2012w7\src\demo 5\application\position.cpp(156): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\dev2012w7\src\demo 5\application\position.cpp(163): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+c:\dev2012w7\src\demo 5\application\main.cpp(432): warning C4305: '=': truncation from 'double' to 'float'
+c:\dev2012w7\src\demo 5\application\main.cpp(760): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\dev2012w7\src\demo 5\application\main.cpp(438): warning C4101: 'xlight_position': unreferenced local variable
+c:\dev2012w7\src\demo 5\application\main.cpp(264): warning C4101: 's_cricket': unreferenced local variable
+c:\dev2012w7\src\demo 5\application\main.cpp(232): warning C4101: 'm5': unreferenced local variable
+c:\dev2012w7\src\demo 5\application\main.cpp(232): warning C4101: 'm7': unreferenced local variable
+c:\dev2012w7\src\demo 5\application\main.cpp(232): warning C4101: 'm6': unreferenced local variable
+c:\dev2012w7\src\demo 5\application\main.cpp(232): warning C4101: 'm4': unreferenced local variable
+c:\dev2012w7\src\demo 5\application\main.cpp(229): warning C4101: 'str': unreferenced local variable
+  Generating Code...
+main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/SAFESEH' specification
+clib.lib(clib.obj) : warning LNK4099: PDB 'clib.pdb' was not found with 'clib.lib(clib.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\clib.pdb'; linking object as if no debug info
+clib.lib(debug.obj) : warning LNK4099: PDB 'clib.pdb' was not found with 'clib.lib(debug.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\clib.pdb'; linking object as if no debug info
+clib.lib(math.obj) : warning LNK4099: PDB 'clib.pdb' was not found with 'clib.lib(math.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\clib.pdb'; linking object as if no debug info
+clib.lib(mem_chek.obj) : warning LNK4099: PDB 'clib.pdb' was not found with 'clib.lib(mem_chek.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\clib.pdb'; linking object as if no debug info
+clib.lib(random.obj) : warning LNK4099: PDB 'clib.pdb' was not found with 'clib.lib(random.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\clib.pdb'; linking object as if no debug info
+queue.lib(queue.obj) : warning LNK4099: PDB 'queue.pdb' was not found with 'queue.lib(queue.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\queue.pdb'; linking object as if no debug info
+dx9.lib(d3d9_2d.obj) : warning LNK4099: PDB 'dx9.pdb' was not found with 'dx9.lib(d3d9_2d.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\dx9.pdb'; linking object as if no debug info
+dx9.lib(d3d9_3d.obj) : warning LNK4099: PDB 'dx9.pdb' was not found with 'dx9.lib(d3d9_3d.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\dx9.pdb'; linking object as if no debug info
+dx9.lib(dinput9.obj) : warning LNK4099: PDB 'dx9.pdb' was not found with 'dx9.lib(dinput9.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\dx9.pdb'; linking object as if no debug info
+dx9.lib(dx9.obj) : warning LNK4099: PDB 'dx9.pdb' was not found with 'dx9.lib(dx9.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\dx9.pdb'; linking object as if no debug info
+gx_w7.lib(bitmap.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(bitmap.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(bmp.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(bmp.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(clip.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(clip.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(drawline.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(drawline.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_blendnode.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_blendnode.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_bv.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_bv.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_camera.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_camera.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_distance.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_distance.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_globals.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_globals.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_gx3dbin.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_gx3dbin.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_intersect.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_intersect.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_localpose.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_localpose.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_lwo2.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_lwo2.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_lws.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_lws.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_math.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_math.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_motion.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_motion.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_motionskeleton.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_motionskeleton.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_nearest.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_nearest.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_object.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_object.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_quaternion.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_quaternion.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_relation.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_relation.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_skeleton.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_skeleton.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx3d_texture.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx3d_texture.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(gx_w7.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(gx_w7.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(image.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(image.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(img_clr.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(img_clr.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(lwo2.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(lwo2.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(lws.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(lws.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(palette.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(palette.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(pixmap.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(pixmap.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(prim.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(prim.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(quantize.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(quantize.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(relation.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(relation.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(text.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(text.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(texture.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(texture.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+gx_w7.lib(virtual.obj) : warning LNK4099: PDB 'gx_w7.pdb' was not found with 'gx_w7.lib(virtual.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\gx_w7.pdb'; linking object as if no debug info
+ms_w7.lib(cursor.obj) : warning LNK4099: PDB 'ms_w7.pdb' was not found with 'ms_w7.lib(cursor.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\ms_w7.pdb'; linking object as if no debug info
+ms_w7.lib(ms_w7.obj) : warning LNK4099: PDB 'ms_w7.pdb' was not found with 'ms_w7.lib(ms_w7.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\ms_w7.pdb'; linking object as if no debug info
+ev_w7.lib(ev_w7.obj) : warning LNK4099: PDB 'ev_w7.pdb' was not found with 'ev_w7.lib(ev_w7.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\ev_w7.pdb'; linking object as if no debug info
+snd8.lib(snd8.obj) : warning LNK4099: PDB 'snd8.pdb' was not found with 'snd8.lib(snd8.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\snd8.pdb'; linking object as if no debug info
+snd8.lib(wave.obj) : warning LNK4099: PDB 'snd8.pdb' was not found with 'snd8.lib(wave.obj)' or at 'C:\dev2012w7\src\Demo 5\Debug\snd8.pdb'; linking object as if no debug info
+  Demo 5.vcxproj -> C:\dev2012w7\src\Demo 5\Debug\Demo 5.exe
+  Demo 5.vcxproj -> C:\dev2012w7\src\Demo 5\Debug\Demo 5.pdb (Full PDB)
+  Debug\Demo 5.exe
+          1 file(s) copied.

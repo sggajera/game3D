@@ -1,0 +1,34 @@
+Directory settings in VC++ Directories
+  Access from View | Property Manager | Debug-Win32 | Microsoft.Cpp.Win32.user 
+
+Refererence:
+http://msdn.microsoft.com/en-us/library/windows/desktop/ee663275%28v=vs.85%29.aspx
+
+
+_____EXE_____
+
+c:\personal_code\bin								// personal directory (optional)
+c:\dev2012w7\bin
+c:\program files (x86)\microsoft speech sdk 5.1\bin				// Speech Development only
+$(DXSDK_DIR)\Utilities\Bin\x86
+...
+
+
+_____INC_____
+
+c:\personal_code\inc								// personal directory (optional)
+c:\dev2012w7\inc
+c:\program files (x86)\microsoft speech sdk 5.1\include				// Speech Development only
+$(IncludePath)
+$(DXSDK_DIR)\Include
+...
+
+
+_____LIB_____
+
+c:\personal_code\lib								// personal directory (optional)
+c:\dev2012w7\lib
+c:\program files (x86)\microsoft speech sdk 5.1\lib\i386			// Speech Development only
+$(LibraryPath)
+$(DXSDK_DIR)\lib\x86
+...

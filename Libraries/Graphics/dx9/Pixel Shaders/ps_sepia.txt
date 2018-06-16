@@ -1,0 +1,26 @@
+// Copyright 2012 Timothy E. Roden.
+
+sampler InputImage;
+
+// Sepia Optimized
+float4 Main (float2 tc : TEXCOORD, float4 clr : COLOR) : COLOR
+{
+  float Y;
+  float4 c, currFrameSample;
+  float3 IntensityConverter = { 0.299, 0.587, 0.114 };
+  float4 sepiaConvert = { 0.191, -0.054, -0.221, 0.0 };
+
+  // Get Sample
+  currFrameSample = tex2D (InputImage, tc);
+
+  // Get intensity value (Y part of YIQ)
+  Y = dot (IntensityConverter, currFrameSample);
+
+  // Convert to Sepia Tone by adding constant
+  c = Y + sepiaConvert;
+
+  // Modulate by lighting
+  c *= clr;  
+
+  return c;
+}

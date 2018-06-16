@@ -1,0 +1,7 @@
+__________ TTS Info __________
+Installed voices:
+  MS-Anna-1033-20-DSK
+  ATT-DT-14-Crystal
+  ATT-DT-14-Mike
+  ATT-DT-14-Audrey
+

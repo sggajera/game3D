@@ -1,0 +1,14 @@
+Demo 1  - Loading LWO model, model transformations
+Demo 2  - alpha blending
+Demo 3  - mip maps
+Demo 4  - texture animation
+Demo 5  - lighting
+Demo 6  - billboards and audio
+Demo 7  - fog
+Demo 8  - rigid body (hierarchical) animation
+Demo 9  - depth sorting
+Demo 10 - terrain
+Demo 11(tree) - terrain - collision detection
+Demo 12 - multi-texture, specular lighting, bone animation, wireframe rendering
+Demo 13 - cubic environment mapping, task switching, screenshots, psys script files
+Demo 17 - LWS animation blending

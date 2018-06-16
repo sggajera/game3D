@@ -1,0 +1,2 @@
+Fri Dec  8 22:31:10 2017
+ gxGetBMPFileDimensions(): can't open BMP file
